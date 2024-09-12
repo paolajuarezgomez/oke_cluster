@@ -1,6 +1,6 @@
 # OCI OKE Cluster quickstart
 
-To Deploy a OKE Cluster ( VCN-native pod networking for OKE CNI ) as a new Dev Platform, follow next steps:
+To Deploy a OKE Cluster ( VCN-native pod networking for OKE CNI ) as a new Dev Platform (on top of ONE-OE LZ), follow next steps:
 
 1 Click the 'Next' button
 
