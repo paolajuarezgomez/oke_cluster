@@ -1,27 +1,27 @@
 module "oke" {
   source  = "oracle-terraform-modules/oke/oci"
   version = "5.1.8"
-  compartment_id = "<CMP-LZP-D-NETWORK-KEY>"
+  compartment_id = "<CMP-PLATFORM-PREPROD-KEY>"
   # IAM - Policies
   create_iam_autoscaler_policy = "never"
   create_iam_kms_policy = "never"
   create_iam_operator_policy = "never"
   create_iam_worker_policy = "never"
   # Network module - VCN
-  vcn_id="<CMP-PLATFORM-DEV-KEY>"
+  vcn_id="<CMP-PLATFORM-PP-KEY>"
   subnets = {
-  cp       = { id = "<SN-DEV-CP-KEY>" }
-  int_lb   = { id = "<SN-DEV-PRIV-LB-KEY>" }
-  workers  = { id = "<SN-DEV-WORKERS-KEY>" }
-  pods     = { id = "<SN-DEV-PODS-KEY>" }
+  cp       = { id = "<SN-PP-CP-KEY>" }
+  int_lb   = { id = "<SN-PP-PRIV-LB-KEY>" }
+  workers  = { id = "<SN-PP-WORKERS-KEY>" }
+  pods     = { id = "<SN-PP-PODS-KEY>" }
   }
   nsgs = {
-  cp       = { id = "<NSG-DEV-CP-KEY>" }
-  int_lb   = { id = "<NSG-DEV-PRIV-LB-KEY>" }
-  workers  = { id = "<NSG-DEV-WORKERS-KEY>" }
-  pods     = { id = "<NSG-DEV-PODS-KEY>" }
+  cp       = { id = "<NSG-PP-CP-KEY>" }
+  int_lb   = { id = "<NSG-PP-PRIV-LB-KEY>" }
+  workers  = { id = "<NSG-PP-WORKERS-KEY>" }
+  pods     = { id = "<NSG-PP-PODS-KEY>" }
   }
-  network_compartment_id = "<CMP-LZP-D-NETWORK-KEY>"
+  network_compartment_id = "<CMP-LZP-PP-NETWORK-KEY>"
   assign_public_ip_to_control_plane = false
   assign_dns = true
   create_vcn = false
