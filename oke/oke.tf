@@ -68,7 +68,7 @@ module "oke" {
     }]
   freeform_tags = {
     workers = {
-      "cluster" = "oke-quickstart"
+      "cluster" = "oke-pp-quickstart"
     }
   }
   worker_pools = {
