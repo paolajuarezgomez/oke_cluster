@@ -9,15 +9,15 @@ To an OKE Cluster ( VCN-native pod networking for OKE CNI ) as a new Platform (o
 2. Cloud shell will be open. Change the **KEYS values** for the respective **OCIDs** in oke_cluster/oke/oke.tf file 
 Example for deploy the Preprod OKE cluster:
 
-  * **vcn_id**="\<VCN-PREPROD-ID>"
+  * **vcn_id**="\<VCN-PREPROD-KEY>"
 
-  * **network_compartment_id** = "\<CMP-LZP-PP-NETWORK-ID>"
+  * **network_compartment_id** = "\<CMP-LZP-PP-NETWORK-KEY>"
 
   * **subnets** = {
-  cp       = { id = "\<SN-PP-CP-ID>" }
-  int_lb   = { id = "\<SN-PP-PRIV-LB-ID>" }
-  workers  = { id = "\<SN-PP-WORKERS-ID>" }
-  pods     = { id = "\<SN-PP-PODS-ID>"}
+  cp       = { id = "\<SN-PP-CP-KEY>" }
+  int_lb   = { id = "\<SN-PP-PRIV-LB-KEY>" }
+  workers  = { id = "\<SN-PP-WORKERS-KEY>" }
+  pods     = { id = "\<SN-PP-PODS-KEY>"}
   }
 
   * **nsgs** = {
